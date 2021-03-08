@@ -1,0 +1,42 @@
+/*
+background-color - Define a cor de fundo de um elemento.
+
+background-position: right top; - Define a direção onde a imagem irá ficar.
+
+background-attachment: fixed; - Define a posição fixa da img na tela, mesmo se tiver uma barra de rolagem.
+
+background-attachment: scroll; - Define que a imagem não fique fica ao rolar na barra de rolagem.
+
+background: #ffffff url("img_tree.png") no-repeat right top; - A propriedade background é uma propriedade abreviada para especificar todas as propriedades background em uma declaração.
+
+Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:
+
+*background-color
+*background-image
+*background-repeat
+*background-attachment
+*background-position
+
+Não importa se um dos valores da propriedade está faltando, desde que os outros estejam nesta ordem. Observe que não usamos a propriedade background-attachment nos exemplos acima, pois ela não tem um valor.
+
+
+*/
+
+body {
+    /*background-color: tomato;*/
+    opacity: 0.8;/*transparência. OBS: Os elementos filhos herdam a aplicação*/
+    background-image: url("https://source.unsplash.com/random");
+    background-repeat: repeat-y;
+}
+h1 {
+    background-color: dodgerblue;
+    text-align: center;
+}
+p {
+    background-color: mediumseagreen;
+    text-align: justify;
+}
+img {
+    width: 350px;
+    height: 200px;
+}

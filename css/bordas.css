@@ -1,0 +1,65 @@
+/*
+
+A border-stylepropriedade especifica que tipo de borda exibir.
+
+Os seguintes valores são permitidos:
+
+dotted - Define uma borda pontilhada
+dashed - Define uma borda tracejada
+solid - Define uma borda sólida
+double - Define uma borda dupla
+groove- Define uma borda com sulcos 3D. O efeito depende do valor da cor da borda
+ridge- Define uma borda 3D estriada. O efeito depende do valor da cor da borda
+inset- Define uma borda de inserção 3D. O efeito depende do valor da cor da borda
+outset- Define uma borda de início 3D. O efeito depende do valor da cor da borda
+none - Não define nenhuma fronteira
+hidden - Define uma borda oculta
+
+-----------------------------------------------------------------
+
+A `border` propriedade é uma propriedade abreviada para as seguintes propriedades individuais de borda:
+
+border-width
+border-style (requerido)
+border-color
+
+*/
+body {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+h1 {
+    border-style: double;
+    border-width: 5px;
+    border-color: blue;
+    text-align: center;
+}
+p {
+    border-style: solid;
+    border-width: medium;/*Largura média*/
+    border-color: red;
+    padding: 10px;
+    text-align: justify;
+}
+p#exemplo {
+    border-color: green;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+p#exemplo2 {
+    border-left: 6px solid blue;
+    background-color: lightgrey;
+}
+p#exemplo3 {
+    border: 2px solid rgb(0, 225, 255);
+    border-radius: 5px;/*Arredondamento da borda.*/
+}
+h2 {
+    border-style: dotted dashed solid double;
+    border-width: 5px 10px 4px 5px;
+    border-color: red green blue yellow;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+body {
+    background-color: mediumseagreen;
+
+
+/*
+Cores: tomato; orange; dodgerblue; mediumseagreen; gray; slateblue; violet; lightgray;
+
+Em CSS, as cores também podem ser especificadas usando valores RGB, valores HEX, valores HSL, valores RGBA e valores HSLA:
+
+*/
+
+}
+
+h1 {
+    text-align: center;
+    color: lightgray;
+    background-color: dodgerblue;    
+}
+p {
+    text-align: justify;
+    text-indent: 20px;
+    border: 2px solid;/*Está definindo a cor inserida no parágrafo*/
+    margin: 15px;
+    padding: 10px;
+}
