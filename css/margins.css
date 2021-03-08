@@ -1,1 +1,104 @@
-/*Adicionado comentário*/
+/*
+
+--Margem - Lados Individuais--
+CSS tem propriedades para especificar a margem de cada lado de um elemento:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Todas as propriedades de margem podem ter os seguintes valores:
+
+auto - o navegador calcula a margem
+comprimento - especifica uma margem em px, pt, cm, etc.
+% - especifica uma margem em% da largura do elemento que o contém
+herdar - especifica que a margem deve ser herdada do elemento pai
+
+MARGIN - Espaçamento externo.
+
+*/
+h1 {
+    margin: 100px 100px 150px 80px;/*Forma abreviada.*/
+}
+/*
+OBS: 
+Se a margin propriedade tiver três valores:
+
+margem: 25px 50px 75px;
+*a margem superior é 25px
+*margens direita e esquerda são 50px
+*margem inferior é 75px
+
+-------------------------
+
+Se a marginpropriedade tiver dois valores:
+
+margem: 25px 50px;
+as margens superior e inferior são 25px
+margens direita e esquerda são 50px
+
+-------------------------
+
+Se a marginpropriedade tiver um valor:
+
+margem: 25px;
+todas as quatro margens têm 25px
+
+-------------------------
+
+O valor automático
+Você pode definir a propriedade margin autopara centralizar horizontalmente o elemento em seu contêiner.
+
+*/
+
+p#margin1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+p#margin2 {
+    margin: 25px 50px 75px;
+}
+p#margin3 {
+    margin: 25px 50px;
+}
+p#margin4 {
+    margin: 25px;
+}
+
+div {
+    width: 600px;
+    height: 600px;
+    background-color:aqua;
+    border: 2px solid black;
+    margin-left: 80px;
+}
+p.inherit {
+    margin-left: inherit;
+}
+
+/*
+
+Redução da margem
+As margens superior e inferior dos elementos às vezes são reduzidas em uma única margem que é igual à maior das duas margens.
+
+Isso não acontece nas margens esquerda e direita! Apenas as margens superior e inferior!
+
+Veja o seguinte exemplo:
+------------------------
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+------------------------
+
+No exemplo acima, o elemento <h1> tem uma margem inferior de 50px e o elemento <h2> tem uma margem superior definida para 20px.
+
+O bom senso parece sugerir que a margem vertical entre <h1> e <h2> seria um total de 70px (50px + 20px). Mas, devido ao colapso da margem, a margem real acaba sendo 50px.
+
+*/
