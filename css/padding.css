@@ -1,0 +1,32 @@
+/*
+
+Espaçamento interno do documento.
+
+Padding CSS
+
+As paddingpropriedades CSS são usadas para gerar espaço ao redor do conteúdo de um elemento, dentro de quaisquer bordas definidas.
+
+
+E possui a mesma ideia da margin e suas especificações relacionadas a possição 
+(padding-top
+padding-right
+padding-bottom
+padding-left) de um elemento.
+*/
+h1 {
+    margin: 30px;
+}
+p {
+    margin-left: 5px;
+    padding-top: 10px;
+}
+p.position {
+    padding: inherit;/*Herda 'padding: 2px;' de div*/
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    padding: 2px;
+    margin-left: 20px;
+}
