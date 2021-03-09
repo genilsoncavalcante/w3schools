@@ -1,0 +1,26 @@
+/*
+
+height - altura
+width - largura
+
+max-width - Largura máxima que um elemento pode atigir
+
+----------------------
+
+Valores CSS de altura e largura
+
+As propriedades heighte widthpodem ter os seguintes valores:
+
+auto- Este é o padrão. O navegador calcula a altura e largura
+length - Define a altura / largura em px, cm etc.
+% - Define a altura / largura em porcentagem do bloco que o contém
+initial - Define a altura / largura para seu valor padrão
+inherit - A altura / largura será herdada de seu valor pai
+
+*/
+
+div {
+    height: 50px;
+    max-width: 50%;
+    border: 1px solid #4CAF50;
+}
