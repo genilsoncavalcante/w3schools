@@ -1,5 +1,89 @@
 /*
 
+Outline - Contorno
+Um contorno é uma linha desenhada fora da borda do elemento.
 
+Um contorno é uma linha desenhada ao redor dos elementos, FORA das bordas, para fazer o elemento "se destacar".
+
+CSS tem as seguintes propriedades de contorno:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+
+A outline-stylepropriedade especifica o estilo do contorno e pode ter um dos seguintes valores:
+
+dotted - Define um contorno pontilhado
+dashed - Define um contorno tracejada
+solid - Define um contorno sólido
+double - Define um contorno duplo
+groove - Define um contorno 3D sulcado
+ridge - Define um contorno 3D estriado
+inset - Define um contorno de inserção 3D
+outset - Define um contorno de início 3D
+none - Não define nenhum contorno
+hidden - Define um contorno oculto
+
+-----------------------------------
+
+Largura de Contorno CSS
+
+A outline-widthpropriedade especifica a largura do contorno e pode ter um dos seguintes valores:
+
+*thin (typically 1px)
+*medium (typically 3px)
+*thick (typically 5px)
+*A specific size (in px, pt, cm, em, etc)
+
+-----------------------------------
+
+A outline-colorpropriedade é usada para definir a cor do contorno.
+
+A outline propriedade é uma propriedade abreviada para definir as seguintes propriedades individuais de contorno:
+
+outline-width
+outline-style (requerido)
+outline-color
+(Não importa a ordem)
+
+
+CSS Outline Offset
+A outline-offsetpropriedade adiciona espaço entre um contorno e a borda / borda de um elemento. O espaço entre um elemento e seu contorno é transparente.
 
 */
+h1 {
+    border: 2px solid red;
+    outline-style: solid;
+}
+p#outline1 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: rgb(121, 187, 34);
+    outline-width: thin;
+}
+p#outline2 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: green;
+    outline-width: medium;
+}
+p#outline3 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: blue;
+    outline-width: thick;
+    margin-bottom: 30px;
+}
+p#outline4 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: gray;
+    outline-width: 4px;
+    outline-offset: 15px;/*Define um espaço tranparente.*/
+}
+p#outline5 {
+    margin-top: 30px;
+}
