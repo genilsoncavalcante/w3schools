@@ -1,0 +1,35 @@
+/*
+
+Box Model - Modelo de Caixa; - é usado para falar sobre design e layout.
+
+O modelo de caixa CSS é essencialmente uma caixa que envolve todos os elementos HTML. Consiste em: margens, bordas, preenchimento e o conteúdo real.
+
+Margin -> Border -> Padding -> Content.
+
+*Content - o conteúdo da caixa, onde o texto e as imagens aparecem
+*Padding - limpa uma área ao redor do conteúdo. O preenchimento é transparente
+*Border - uma borda que circunda o preenchimento e o conteúdo
+*Margin - Limpa uma área fora da borda. A margem é transparente
+
+
+Calculando...
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+===Largura Total===
+320 px (largura)
++ 20 px ( preenchimento
+esquerdo + direito)
++ 10 px (margem esquerda + direita) + 0 px (margem esquerda + direita) = 350 px
+==
+
+===Altura Tortal===
+A altura total de um elemento deve ser calculada assim:
+
+Altura total do elemento = altura + preenchimento superior + preenchimento inferior + borda superior + borda inferior + margem superior + margem inferior
+==
+*/
