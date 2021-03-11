@@ -1,0 +1,128 @@
+/*
+
+Quando a text-alignpropriedade é definida como "justificar", cada linha é esticada para que todas as linhas tenham a mesma largura e as margens esquerda e direita sejam retas (como em revistas e jornais)
+
+Direção do texto
+
+As propriedades directione unicode-bidipodem ser usadas para alterar a direção do texto de um elemento:
+
+
+Alinhamento vertical
+
+A vertical-alignpropriedade define o alinhamento vertical de um elemento.
+
+Decoração de Texto
+A text-decorationpropriedade é usada para definir ou remover decorações do texto.
+
+O valor text-decoration: none;é frequentemente usado para remover sublinhados de links.
+
+--------------------------------------
+
+Transformação de Texto
+
+A text-transformpropriedade é usada para especificar letras maiúsculas e minúsculas em um texto.
+
+Ele pode ser usado para transformar tudo em letras maiúsculas ou minúsculas, ou colocar a primeira letra de cada palavra em maiúscula
+
+--------------------------------------
+
+Recuo de Texto
+
+A text-indentpropriedade é usada para especificar o recuo da primeira linha de um texto:
+
+--------------------------------------
+
+Espaçamento entre Letras
+
+A letter-spacingpropriedade é usada para especificar o espaço entre os caracteres em um texto.
+
+O exemplo a seguir demonstra como aumentar ou diminuir o espaço entre os caracteres.
+
+--------------------------------------
+
+Altura da linha
+A line-heightpropriedade é usada para especificar o espaço entre as linhas
+
+--------------------------------------
+
+Espaçamento entre Palavras
+A word-spacingpropriedade é usada para especificar o espaço entre as palavras em um texto.
+
+--------------------------------------
+
+Sombra do Texto
+
+A text-shadowpropriedade adiciona sombra ao texto.
+
+Em seu uso mais simples, você especifica apenas a sombra horizontal (2px) e a sombra vertical (2px)
+
+*/
+
+
+body {
+    background-color: lightgrey;
+    color: blue;
+}
+h1, h2, h3 {
+    background-color: black;
+    color: white;
+}
+h1 {
+    text-align: center;
+    text-decoration: overline;
+    letter-spacing: 3px;/*Espaçamento entre as letras.*/
+}
+h2 {
+    text-align: left;
+    text-decoration: line-through;
+    letter-spacing: -3px;/*Espaçamento reduzido entre as letras.*/
+    word-spacing: 10px;/*Espaçemento entre as palavras.*/
+}
+h3 {
+    text-align: right;
+    text-decoration: underline;
+}
+h4 {
+    text-shadow: 2px 2px 5px red;/*Sombreamento do texto. espalhemtno e cor*/
+    font-size: 25px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    width: 300px;
+    vertical-align: bottom;/*Alinhamento Vertical*/
+    text-transform: uppercase;/**Tranforma o texto todo para letras maiúsculas*/
+}
+p.left {
+    direction: ltr;
+    vertical-align: top;/*Alinhamento Vertical*/
+    text-transform: lowercase;/*Transforma o texto todo para letras menúsculas*/
+    line-height: 1.2;/*Espaçamento entre as linhas.*/
+}
+p.right {
+    direction: rtl;
+    vertical-align: middle;/*Alinhamento Vertical*/
+    text-transform: capitalize;/*A primeira letra de cada palavra em maiúscula*/
+    line-height: 0.6;/*Espaçamento entre as linhas reduzida;*/
+}
+p#white-space {
+    white-space: nowrap;/*Remoção dos espaços em branco.*/
+}
+
+b#top {
+    vertical-align: top;
+    font-size: 25px;
+}
+b#middle {
+    vertical-align: middle;
+    font-size: 25px;
+}
+b#bottom {
+    vertical-align: bottom;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;/*Sem estilo padrão nenhum*/
+}
