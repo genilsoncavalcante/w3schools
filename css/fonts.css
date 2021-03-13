@@ -1,0 +1,99 @@
+/*
+
+Famílias de fontes genéricas
+No CSS, existem cinco famílias de fontes genéricas:
+
+1 - As fontes com Serif têm um pequeno traço nas bordas de cada letra. Eles criam uma sensação de formalidade e elegância.(exemplos: Times New Roman, Georgia, Garamond)
+
+2 - Fontes Sans-serif têm linhas limpas (sem pequenos traços anexados). Eles criam um visual moderno e minimalista. (exemplos: Arial, Verdana, Helvetica)
+
+3 - Fontes Monospace - aqui todas as letras têm a mesma largura fixa. Eles criam uma aparência mecânica. (exemplos: Courier New, Lucida Console, Monaco)
+
+4 - As fontes Cursive imitam a caligrafia humana. (exemplos: Brush Script MT, Lucida Handwriting)
+
+5 - As fontes Fantasy são decorativas / divertidas. (exemplos: Compperplate, Papyrus.)
+
+Todos os nomes de fontes diferentes pertencem a uma das famílias de fontes genéricas. 
+
+---------------------------------
+
+A propriedade da família de fontes CSS
+
+Em CSS, usamos a font-familypropriedade para especificar a fonte de um texto.
+
+A font-familypropriedade deve conter vários nomes de fontes como um sistema "substituto", para garantir a compatibilidade máxima entre navegadores / sistemas operacionais. Comece com a fonte desejada e termine com uma família genérica (para permitir que o navegador escolha uma fonte semelhante na família genérica, se nenhuma outra fonte estiver disponível). Os nomes das fontes devem ser separados por vírgula.
+
+Nota : Se o nome da fonte for mais de uma palavra, deve estar entre aspas, tipo: "Times New Roman".
+
+----------------------------------------------
+
+Melhores fontes seguras da Web para HTML e CSS
+
+A lista a seguir são as melhores fontes seguras da web para HTML e CSS:
+
+Arial (sans-serif)
+Verdana (sem serifa)
+Helvetica (sans-serif)
+Tahoma (sem serifa)
+Trebuchet MS (sem serifa)
+Times New Roman (serif)
+Geórgia (serif)
+Garamond (serif)
+Courier New (monoespaço)
+Brush Script MT (cursivo)
+
+Geórgia (serif)
+Georgia é uma elegante fonte com serifa. É muito legível em diferentes tamanhos de fonte, por isso é um bom candidato para design responsivo a dispositivos móveis.
+
+--------------------------------
+
+Fallbacks de fonte comumente usados
+Abaixo estão alguns substitutos de fonte comumente usados, organizados pelas 5 famílias de fontes genéricas:
+
+Serif
+Sem serifa
+Monoespaço
+Cursivo
+Fantasia
+
+--------------------------------
+
+Estilo de fonte
+
+A font-stylepropriedade é usada principalmente para especificar texto em itálico.
+
+Esta propriedade possui três valores:
+
+normal - o texto é mostrado normalmente
+italic - o texto é mostrado em itálico
+oblique - o texto está "inclinado" (oblíquo é muito semelhante ao itálico, mas menos suportado)
+
+---------------------------------
+
+Espessura da fonte
+A font-weightpropriedade especifica o peso de uma fonte.
+
+
+*/
+
+p#p1 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+}
+p#p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: lighter;/*Espessura da fonte*/
+}
+p#p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-style: oblique;/*Dá uma declinada na letra*/
+    font-weight: bold;
+    font-variant: normal;/*Desnecessário*/
+}
+p#p4 {
+    font-weight: 900;
+    font-variant: small-caps;/*Esse tranforma a fonte para letras maiúsculas mas com o tamanho reduzido*/
+}
