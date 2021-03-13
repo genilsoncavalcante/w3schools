@@ -1,0 +1,68 @@
+/*
+
+Tamanho da fonte
+
+A font-sizepropriedade define o tamanho do texto.
+
+Ser capaz de gerenciar o tamanho do texto é importante em web design. No entanto, você não deve usar ajustes de tamanho de fonte para fazer com que os parágrafos se pareçam com cabeçalhos ou que os cabeçalhos pareçam parágrafos.
+
+Sempre use as tags HTML adequadas, como <h1> - <h6> para cabeçalhos e <p> para parágrafos.
+
+O valor do tamanho da fonte pode ser
+
+O valor do tamanho da fonte pode ser um tamanho absoluto ou relativo.
+
+Tamanho absoluto:
+
+Define o texto para um tamanho especificado
+Não permite que um usuário altere o tamanho do texto em todos os navegadores (ruim por motivos de acessibilidade)
+O tamanho absoluto é útil quando o tamanho físico da saída é conhecido
+Tamanho relativo:
+
+Define o tamanho em relação aos elementos circundantes
+Permite ao usuário alterar o tamanho do texto nos navegadores
+Nota: Se você não especificar um tamanho de fonte, o tamanho padrão para texto normal, como parágrafos, é 16px (16px = 1em).
+
+Defina o tamanho da fonte com o Em
+Para permitir que os usuários redimensionem o texto (no menu do navegador), muitos desenvolvedores usam em em vez de pixels.
+
+1em é igual ao tamanho da fonte atual. O tamanho padrão do texto nos navegadores é 16px. Portanto, o tamanho padrão de 1em é 16px.
+
+O tamanho pode ser calculado de pixels para em usando esta fórmula: pixels / 16 = em
+
+o tamanho do texto em em é o mesmo do exemplo anterior em pixels. Porém, com o tamanho em, é possível ajustar o tamanho do texto em todos os navegadores.
+
+---------------------------------------
+
+Tamanho de fonte responsivo
+O tamanho do texto pode ser definido com uma vwunidade, o que significa a "largura da janela de visualização".
+
+Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador
+
+<h1 style="font-size:10vw">Hello World</h1>
+
+OBS: A janela de visualização é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. Se a janela de visualização tiver 50 cm de largura, 1vw é 0,5 cm.
+
+*/
+
+body {
+    font-size: 100%;/*Pode evitar problemas em navegares antigos com relação ao tamanho da fonte*/
+    width: 600px;
+    background-color: gray;
+}
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    font-size: 5vw;/*A fonte é redimensionada de acordo com o tamano da tela. Resposividade.*/
+}
+h2 {
+    font-size: 1.875em;
+    color: blue;
+}
+p {
+    font-size: 0.875em;
+    font-size: 1.5vw;/*A fonte é redimensionada de acordo com o tamano da tela. Resposividade.*/
+    text-align: justify;
+    color: aqua;
+}
