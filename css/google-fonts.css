@@ -17,6 +17,20 @@ Nota: Ao especificar uma fonte em CSS, sempre liste pelo menos uma fonte substit
 Use várias fontes do Google
 Para usar várias fontes do Google, basta separar os nomes das fontes com uma barra vertical (|), como este:
 
+A propriedade da fonte CSS
+Para encurtar o código, também é possível especificar todas as propriedades de fonte individuais em uma propriedade.
+
+A fontpropriedade é uma propriedade abreviada para:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+Observação: os valores font-sizee font-familysão obrigatórios. Se um dos outros valores estiver faltando, seu valor padrão será usado.
+
+
+
 */
 body {
     /*font-size: 1.21em;*/
