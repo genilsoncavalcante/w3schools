@@ -1,0 +1,40 @@
+/*
+
+Fontes do Google
+Se você não quiser usar nenhuma das fontes padrão em HTML, pode usar o Google Fonts.
+
+O Google Fonts é de uso gratuito e tem mais de 1000 fontes para você escolher.
+
+Como usar o Google Fonts
+Basta adicionar um link de folha de estilo especial na seção <head> e, em seguida, consultar a fonte no CSS.
+
+----------------------------------------------
+
+Nota: Ao especificar uma fonte em CSS, sempre liste pelo menos uma fonte substituta (para evitar comportamentos inesperados). Portanto, também aqui você deve adicionar uma família de fontes genéricas (como serif ou sans-serif) ao final da lista.
+
+----------------------------------------------
+
+Use várias fontes do Google
+Para usar várias fontes do Google, basta separar os nomes das fontes com uma barra vertical (|), como este:
+
+*/
+body {
+    /*font-size: 1.21em;*/
+}
+p.font-effect-fire {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+
+/*
+p#font-sofia {
+    font-family: "Sofia", sans-serif;/*Google Fonts
+}
+p#font-trirong {
+    font-family: "trirong", serif;
+}
+p#font-audiowide {
+    font-family: "Audiowide", sans-serif;
+}
+
+*/
