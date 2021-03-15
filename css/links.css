@@ -1,0 +1,71 @@
+/*
+
+Links de estilo
+
+Os links podem ser decorados com qualquer propriedade CSS (por exemplo color, font-family, background, etc.).
+
+Além disso, os links podem ter estilos diferentes dependendo do estado em que estão.
+
+Os quatro estados de links são:
+
+a:link - um link normal não visitado
+a:visited - um link que o usuário visitou
+a:hover - um link quando o usuário passa o mouse sobre ele
+a:active - um link no momento em que é clicado
+
+
+Ao definir o estilo para vários estados de link, existem algumas regras de ordem:
+
+a: hover DEVE vir depois de um: link e a: visitado
+a: active DEVE vir após a: hover
+*/
+
+
+
+a:link {/*Link Normal*/
+    color: red;
+}
+a:visited {/*Link Visitado*/
+    color: green;
+}
+a:hover {/*Link quando o mause passa sobre ele*/
+    color: hotpink;
+}
+a:active {/*Link no momento clicado*/
+    color: blue;
+}
+button {
+    margin: 20px;
+    padding: 5px;
+}
+button a:link {
+    text-decoration: none;
+    background-color: yellow;
+}
+button a:visited {
+    text-decoration: none;
+    background-color: cyan;
+}
+button a:hover {
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+button a:active {
+    text-decoration: underline;
+    background-color: hotpink;
+}
+
+
+
+
+a.portifolio:link, a.portifolio:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a.portifolio:hover, a.portifolio:active {
+    background-color: red;
+}
