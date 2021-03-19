@@ -1,0 +1,61 @@
+/*
+
+A displaypropriedade é a propriedade CSS mais importante para controlar o layout.
+
+-------------------------------------
+
+Elementos de nível de bloco
+Um elemento de nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (se estende para a esquerda e para a direita, tanto quanto pode).
+
+O elemento <div> é um elemento de nível de bloco.
+Exemplos de elementos de nível de bloco:
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<cabeçalho>
+<footer>
+<seção>
+
+-------------------------------------
+
+Elementos Inline
+Um elemento embutido não começa em uma nova linha e só ocupa a largura necessária.
+
+Este é um elemento <span> embutido dentro de um parágrafo.
+
+Exemplos de elementos embutidos:
+
+<span>
+<a>
+<img>
+
+-------------------------------------
+
+Mostrar nenhum;
+display: none;é comumente usado com JavaScript para ocultar e mostrar elementos sem excluí-los e recriá-los. Dê uma olhada em nosso último exemplo nesta página se você quiser saber como isso pode ser alcançado.
+
+O <script>elemento usa display: none; como padrão.
+
+-------------------------------------
+
+Ocultar um elemento pode ser feito definindo a displaypropriedade como none. O elemento ficará oculto e a página será exibida como se o elemento não existisse:
+
+-------------------------------------
+
+*/
+
+li {
+    display: inline;
+}
+span {
+    display: block;
+}
+
+h1.hidden {
+    display: none;
+}
+h2.titulo {
+    visibility: hidden;/*Esconde o elementos, mas ainda permanece o espaço do mesmo.*/
+}
