@@ -1,0 +1,31 @@
+/*
+
+Diferentes marcadores de item de lista
+
+A list-style-typepropriedade especifica o tipo de marcador de item da lista.
+
+--------------------------------------------
+
+Uma imagem como marcador de item da lista
+
+A list-style-imagepropriedade especifica uma imagem como marcador do item da lista:
+
+*/
+
+ul.a {
+    list-style-type: circle;
+}
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+ul.list-image {
+    list-style-image: url('aqui-vem-uma-imagem');
+}
