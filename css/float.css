@@ -6,6 +6,11 @@ A clearpropriedade CSS especifica quais elementos podem flutuar ao lado do eleme
 
 */
 
+* {
+    box-sizing: border-box;
+    
+}
+
 div.left{
     width: 100px;
     height: 30px;
