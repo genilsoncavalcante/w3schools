@@ -1,0 +1,29 @@
+/*
+
+A floatpropriedade CSS especifica como um elemento deve flutuar.
+
+A clearpropriedade CSS especifica quais elementos podem flutuar ao lado do elemento limpo e de que lado.
+
+*/
+
+div.left{
+    width: 100px;
+    height: 30px;
+    background-color: tomato;
+    margin: 5px;
+}
+div.left p, div.right p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+div.right {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(41, 112, 245);
+    margin: 5px;
+    float: right;
+}
