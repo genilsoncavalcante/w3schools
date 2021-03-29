@@ -1,0 +1,68 @@
+/*
+
+O que são Pseudo-classes?
+Uma pseudoclasse é usada para definir um estado especial de um elemento.
+
+Por exemplo, pode ser usado para:
+
+Definir o estilo de um elemento quando o usuário passa o mouse sobre ele
+Estilizar links visitados e não visitados de maneira diferente
+Defina o estilo de um elemento quando ele receber o foco
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sintaxe
+A sintaxe das pseudoclasses:
+
+selector:pseudo-class {
+  property: value;
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+/*Unvisited link*/
+a:link{color: #ff0000;}
+
+/*Visited link*/
+a:visited{color: #00ff00;}
+
+/*Mouse over link*/
+a:hover{color:#ff00ff;}
+
+/*Selected link*/
+a:active{color:#0000ff;}
+
+/*Pseudo classes podem ser combinadas com classes em css, para poderem selecionar elementos.*/
+
+a.highlight:hover{color:#5c84a5}
+
+div{
+    background-color:green;
+    color:white;
+    padding: 25px;
+    text-align: center;
+    transition: 2s;
+}
+div:hover{
+    background-color: blue;
+}
+
+p.desaparecido{
+    display: none;
+    background-color:yellow;
+    padding: 20px;
+    color:#000;
+}
+div.aparecer:hover p{
+    display: block;
+}
+
+/*Primeiro filho*/
+h2:first-child{
+    color: blue;
+}
+p:first-child{
+    color: blue;
+}
+
+/*Formulário*/
+input:focus{background-color: lightblue;}
