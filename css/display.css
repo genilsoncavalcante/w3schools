@@ -1,0 +1,27 @@
+div span.a{
+    display: inline;
+    background-color: tomato;
+    height: 100px;/*Não se aplica*/
+    width: 100px;/*Não se aplica*/
+    border: 1px solid black;
+    padding: 3px;
+}
+div span.b{
+    display: inline-block;
+    background-color: tomato;
+    height: 100px;/*Se aplica*/
+    width: 100px;/*Se aplica*/
+    border: 1px solid black;
+    padding: 3px;
+}
+div span.c{
+    display: block;/*Ocupa todo o bloco*/
+    background-color:tomato;
+    border: 1px solid black;
+    margin: 13px;
+    padding: 5px;
+    width: 100px;
+}
+.agrupamento{
+    display: block;
+}
