@@ -1,0 +1,52 @@
+/*
+
+O que são pseudo-elementos?
+Um pseudoelemento CSS é usado para estilizar partes específicas de um elemento.
+
+Por exemplo, pode ser usado para:
+
+Defina o estilo da primeira letra ou linha de um elemento
+Insira o conteúdo antes ou depois do conteúdo de um elemento
+
+Sintaxe
+A sintaxe dos pseudoelementos:
+
+selector::pseudo-element {
+  property: value;
+}
+
+OBS: Definição de (::) para pseudo-seletores e (:)pseudo-classes
+*/
+
+p::first-line{
+    color: #ff0000;
+}
+p::first-letter{
+    color: blue;
+    font-size: xx-large;
+}
+
+/*Pseudo-elementos podem ser combinados com classes*/
+p.intro::first-letter{
+    color: green;
+    font-size: 200%;
+}
+
+/*
+
+h1::before {
+  content: url(smiley.gif);
+}Define um conteúdo antes do conteúdo de Texto. Eemplo: uma imagem.
+O ::after pseudoelemento pode ser usado para inserir algum conteúdo após o conteúdo de um elemento.
+
+*/
+
+::marker{/*O ::markerpseudoelemento seleciona os marcadores dos itens da lista.*/
+    color: red;
+    font-size: 23px;
+}
+
+::selection {/*Quando selecionamos os elementos do texto, ele ficará com cor de fundo amarela e com cor de texto vermelha.*/
+    color: red;
+    background: yellow;
+}
