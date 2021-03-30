@@ -1,0 +1,17 @@
+/*
+
+A opacity propriedade especifica a opacidade / transparência de um elemento.
+
+Imagem Transparente
+A opacitypropriedade pode assumir um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente:
+*/
+
+img{
+    opacity: 0.3;
+    width: 400px;
+    transition: 2s;
+}
+img:hover{
+    opacity: 1.0;
+    transition: 2s;
+}
